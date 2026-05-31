@@ -136,6 +136,7 @@ export default function RegisterPage() {
               className={styles.input}
               autoComplete="name"
               {...register('name')}
+              suppressHydrationWarning
             />
           </div>
           {errors.name && (
@@ -157,6 +158,7 @@ export default function RegisterPage() {
               className={styles.input}
               autoComplete="email"
               {...register('email')}
+              suppressHydrationWarning
             />
           </div>
           {errors.email && (
@@ -178,6 +180,7 @@ export default function RegisterPage() {
               className={styles.input}
               autoComplete="new-password"
               {...register('password')}
+              suppressHydrationWarning
             />
             <button
               type="button"
@@ -222,6 +225,7 @@ export default function RegisterPage() {
               className={styles.input}
               autoComplete="new-password"
               {...register('confirmPassword')}
+              suppressHydrationWarning
             />
             <button
               type="button"

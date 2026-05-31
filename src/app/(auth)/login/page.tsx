@@ -178,13 +178,14 @@ export default function LoginPage() {
             </label>
             <div className={styles.inputWrapper}>
               <Mail className={styles.inputIcon} />
-              <input
+               <input
                 id="email-pw"
                 type="email"
                 placeholder="you@example.com"
                 className={styles.input}
                 autoComplete="email"
                 {...passwordForm.register('email')}
+                suppressHydrationWarning
               />
             </div>
             {passwordForm.formState.errors.email && (
@@ -207,6 +208,7 @@ export default function LoginPage() {
                 className={styles.input}
                 autoComplete="current-password"
                 {...passwordForm.register('password')}
+                suppressHydrationWarning
               />
               <button
                 type="button"
@@ -262,6 +264,7 @@ export default function LoginPage() {
                 className={styles.input}
                 autoComplete="email"
                 {...magicLinkForm.register('email')}
+                suppressHydrationWarning
               />
             </div>
             {magicLinkForm.formState.errors.email && (
