@@ -470,7 +470,8 @@ function TradesDashboard() {
                         className={styles.tagBadge}
                         style={{ 
                           background: selectedTags.includes(t.id) ? 'var(--accent-primary-glow)' : '',
-                          borderColor: selectedTags.includes(t.id) ? 'var(--accent-primary)' : ''
+                          borderColor: selectedTags.includes(t.id) ? 'var(--accent-primary)' : '',
+                          color: selectedTags.includes(t.id) ? 'var(--text-primary)' : ''
                         }}
                         onClick={() => handleTagToggle(t.id)}
                       >
